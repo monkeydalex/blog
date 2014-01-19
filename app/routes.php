@@ -17,6 +17,7 @@ Route::get('profil', array('before' => 'auth', function()
 {
     echo 'Vous avez bien été identifié '.Auth::user()->username;
 }));
+
 Route::get('profil', 'ProfilController@index');
 
 # Gestion des connexions
